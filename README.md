@@ -2,6 +2,7 @@
 
 These files were designed to aid in the development of new pages for the Sheridan College website
 
+![Screenshot of the Sheridan Responsive Design Template](/img/responsive/screenshot.png "Sheridan Responsive Design Template")
 
 ## HTML/PHP
 
@@ -76,10 +77,9 @@ Below is a copy of lines 28–38 in `new_site.less`:
 //*----------- START HERE -----------*//
 #content_bg {
 	width: 100%;
-	max-width: 960px;
+	max-width: 960px; // This line is different in the site's IE stylesheet
 }
 #footer-sher {
-	background: #0060ac repeat-x;
 	color: #fff;
 	width: 100%;
 	min-width: 100px;
