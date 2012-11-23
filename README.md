@@ -119,7 +119,7 @@ Do not forget about the `new_site-ie.less` stylesheet for Internet Explorer 8 an
 
 Optional table styles overrides for tabular data. Narrowed down CSS specificity is required to override default table styles and is turned off by default:
 
-```sass
+```scss
 /******************
   Tables Overrides
 ******************/
