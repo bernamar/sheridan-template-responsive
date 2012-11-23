@@ -19,6 +19,16 @@ This file contains the header, footer, content elements and all HTTP requests to
 
 This is your main site file. You can change this filename to reflect the project name but be sure to make the change in the `index.php` file as well.
 
+`site.php` contains:
+
+	```html
+	<div id="new_site">
+		Start here
+	</div>
+	```
+
+Nest all elements in the new_site element. Please rename this element in both HTML and CSS files.
+
 
 ## CSS
 
@@ -33,8 +43,11 @@ Import `grid.less` in the new site's CSS to use:
 
 New Sheridan webpages are built for the future. We anticipate a Responsive Design within the near future and are designing all new pages for Responsive Design.
 
+Please reference lines 31-41 in `new_site.less`
+
+	```less
 	// RESPONSIVE DESIGN
-	// If Responsive, use, if not responsive, comment out
+	// If Responsive, use, if not Responsive, comment out
 	//*----------- START HERE -----------*//
 	#content_bg {
 		width: 100%;
@@ -48,3 +61,17 @@ New Sheridan webpages are built for the future. We anticipate a Responsive Desig
 		text-align: center;
 	}
 	//*----------- END HERE -----------*//
+	```
+
+This will give designers and front-end developers the flexibility to design for the future while still designing for the present.
+
+
+## Javascript
+
+Javascript file is empty except for document ready:
+
+	``` js
+	$(document).ready(function(){
+		// New site scripts here
+	});
+	```

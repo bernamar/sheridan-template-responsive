@@ -7,17 +7,6 @@
   margin: 0 auto;
   padding-top: 1em;
 }
-#content_bg {
-  width: 100%;
-  max-width: 960px;
-}
-#footer-sher {
-  background: #0060ac repeat-x;
-  color: #fff;
-  width: 100%;
-  min-width: 100px;
-  text-align: center;
-}
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -27,14 +27,34 @@
 	<div id="content_bg">
 		<div id="content" class="clearfix">
 			
-			<?php $page = $_GET['p'];
+			<?php 
+				/*----------- Instructions -----------
+
+					This section automagically handles new pages
+
+					It was created to avoid the redundancy of creating new files
+
+					Create a new php document, e.g.:
+
+						new_page.php
+
+					Link to this page, e.g.:
+					
+						<a href="/?p=new_page">...</a>
+
+					As long as new pages' filenames are the same as the p value, everything will work automagically
+					
+				----------- /Instructions -----------*/
+
+				$page = $_GET['p'];
 				
 				if(!$page) {
-					// default page to include
+					// Site Main Page
 					include 'site.php';
 				} else {
-					// other pages' filenames need to have the same name as their p value
+					
 					include $page . '.php';
+
 				}
 			?>
 
@@ -44,5 +64,10 @@
 
 	 <div id="footer-sher">		
 	 	footer
+	 	<br/><br/>
+	 	if this text is black = Responsive Design OFF (NOT Responsive)
+	 	<br/><br/>
+	 	if this text is white = Responsive Design ON (Responsive)
+
 	</div>
 </body>

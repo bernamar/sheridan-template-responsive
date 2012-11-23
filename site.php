@@ -1,3 +1,3 @@
 <div id="new_site">
-	test
+	Start here
 </div>
