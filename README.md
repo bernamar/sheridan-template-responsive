@@ -25,7 +25,7 @@ This file contains the header, footer, content elements and all HTTP requests to
 } ?>
 ```
 
-In this file you can modify lines 11–20 to add in HTTP requests. jQuery and all default stylesheets and scripts are already included above this section.
+In this file you can modify lines 11–22 to add in HTTP requests. jQuery and all default stylesheets and scripts are already included above this section.
 
 
 ##### Usage
@@ -35,7 +35,7 @@ In this file you can modify lines 11–20 to add in HTTP requests. jQuery and al
 
 This will tell the `index.php` file to include the page with the value of `p` so it is important that they are identical.
 
-If no value for `p` is specified, it defaults to `site.php` which is the first page of your site. Feel free to rename this file but if you do, you must replace the reference to it in the `index.php` with the new filename (line 31).
+If no value for `p` is specified, it defaults to `site.php` which is the first page of your site. Feel free to rename this file but if you do, you must replace the reference to it in the `index.php` with the new filename (line 34).
 
 
 #### site.php
@@ -59,7 +59,7 @@ Build your site in this file alone and nest all elements in the `new_site` eleme
 
 All new Sheridan websites are built using the LESS CSS preprocessor and the [Semantic.gs](http://semantic.gs) grid system for efficient site development.
 
-Import `grid.less` in the new site's CSS to use:
+The Semantic.gs framework is found in `grid.less` and is imported in the new site's CSS:
 
 `@import 'grid.less';`
 
@@ -68,7 +68,7 @@ Import `grid.less` in the new site's CSS to use:
 
 New Sheridan webpages are built for the future. We anticipate a Responsive Design within the near future and are designing all new pages for Responsive Design.
 
-Please reference lines 28–37 in `new_site.less`
+Below is a copy of lines 28–38 in `new_site.less`:
 
 ```css
 // RESPONSIVE DESIGN
@@ -90,7 +90,7 @@ Please reference lines 28–37 in `new_site.less`
 
 This will give designers and front-end developers the flexibility to design for the future while still designing for the present.
 
-Line 51 of `new_site.less` reads:
+Line 48 of `new_site.less` reads:
 
 ```css
 #new_site {
@@ -98,7 +98,7 @@ Line 51 of `new_site.less` reads:
 }
 ```
 
-Nest all styles within this section so as not to accidentally override default styles site-wide and to ensure your styles are read as intended.
+Nest all styles within this section so as not to accidentally override default styles site-wide in the event of a common class name and to ensure your styles are read as intended.
 
 Do not forget about the `new_site-ie.less` stylesheet for Internet Explorer 8 and under.
 
