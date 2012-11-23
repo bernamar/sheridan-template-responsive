@@ -72,9 +72,7 @@ New Sheridan webpages are built for the future. We anticipate a Responsive Desig
 To know if you are in Responsive Design mode, you can:
 
 1. Resize the browser
-2. Look at the footer text
-	a. If it's white, it's responsive
-	b. If it's black, it's not responsive
+2. Look at the footer text: white = responsive, black &ne; responsive
 
 
 ##### Usage
