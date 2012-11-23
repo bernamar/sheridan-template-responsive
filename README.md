@@ -16,12 +16,12 @@ This file contains the header, footer, content elements and all HTTP requests to
 
 ```php
 <?php $page = $_GET['p'];
-if(!$page) {
-	// Site Main Page
-	include 'site.php';
-} else {
-	// Additional pages
-	include $page . '.php';
+	if(!$page) {
+		// Site Main Page
+		include 'site.php';
+	} else {
+		// Additional pages
+		include $page . '.php';
 } ?>
 ```
 
@@ -30,7 +30,7 @@ In this file you can modify lines 11–20 to add in HTTP requests. jQuery and al
 
 ##### Usage
 
-1. Create a new file. e.g. `second_page.php`
+1. Create a new file, e.g. `second_page.php`
 2. In the navigation, link to this page like so: `<a href="/?p=second_page">Second Page</a>`
 
 This will tell the `index.php` file to include the page with the value of `p` so it is important that they are identical.
