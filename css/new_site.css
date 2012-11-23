@@ -1,0 +1,16 @@
+#header {
+  background: url(../img/responsive/header.png) repeat-x #0060ac;
+  height: 108px;
+}
+#header img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.error {
+  color: #f99500 !important;
+}

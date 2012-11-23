@@ -1,0 +1,48 @@
+// Mixins
+.cf() {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.adelle(@w: 400) {
+	font-family: adelle, georgia, sans-serif;
+	font-weight: @w;
+}
+.verdana(@w: 400) {
+	font-family: verdana, sans-serif;
+	font-weight: @w;
+}
+
+// Responsiveness: New header and tweaking existing elements
+#header {
+	background: url(../img/responsive/header.png) repeat-x #0060ac;
+	height: 108px;
+	img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 1em;
+	}
+}
+// Responsive? Bring this section back: START
+//*----------- START HERE -----------*//
+// #content_bg {
+// 	width: 100%;
+// 	max-width: 960px;
+// }
+// #footer-sher {
+// 	background: #0060ac repeat-x;
+// 	color: #fff;
+// 	width: 100%;
+// 	min-width: 100px;
+// 	text-align: center;
+// }
+//*----------- END HERE -----------*//
+
+// Layout
+*{box-sizing: border-box; -moz-box-sizing: border-box;}
+
+&.error {
+	color: #f99500 !important;
+}
