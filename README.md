@@ -69,7 +69,14 @@ The Semantic.gs framework is found in `grid.less` and is imported in the new sit
 
 New Sheridan webpages are built for the future. We anticipate a Responsive Design within the near future and are designing all new pages for Responsive Design.
 
-Below is a copy of lines 28–38 in `new_site.less`:
+
+##### Usage
+
+It was designed to be easy to use. Use the CSS if the site is Responsive, and comment out the CSS if the site is not Responsive.
+
+At production when sending it off to the .NET developer, if the current site is not Responsive, comment out the CSS so that it does not compile in the production CSS file.
+
+Below is a copy of lines 28–38 in `new_site.less` that will be added and removed as needed:
 
 ```css
 // RESPONSIVE DESIGN
@@ -77,7 +84,7 @@ Below is a copy of lines 28–38 in `new_site.less`:
 //*----------- START HERE -----------*//
 #content_bg {
 	width: 100%;
-	max-width: 960px; // This line is different in the site's IE stylesheet
+	max-width: 960px; // This line is different in the IE stylesheet
 }
 #footer-sher {
 	color: #fff;
