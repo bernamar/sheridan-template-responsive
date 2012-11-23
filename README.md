@@ -115,6 +115,31 @@ Nest all styles within this section so as not to accidentally override default s
 Do not forget about the `new_site-ie.less` stylesheet for Internet Explorer 8 and under.
 
 
+##### Table Style Overrides
+
+Optional table styles overrides for tabular data. Narrowed down CSS specificity is required to override default table styles and is turned off by default:
+
+```css
+/******************
+  Tables Overrides
+******************/
+html body#site div#content_bg div#content {
+	// Background behind table you will override
+}
+html {
+	body#site {
+		div#content_bg {
+			div#content {
+				#new_site {
+					// New table styles
+				}
+			}
+		}
+	}
+}
+```
+
+
 ## Javascript
 
 Javascript file is empty except for document ready:
