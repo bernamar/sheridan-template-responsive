@@ -1,0 +1,33 @@
+@import 'grid.less';
+
+// Mixins
+.cf() {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.adelle(@w: 400) {
+	font-family: adelle, georgia, sans-serif;
+	font-weight: @w;
+}
+.verdana(@w: 400) {
+	font-family: verdana, sans-serif;
+	font-weight: @w;
+}
+
+// RESPONSIVE DESIGN
+// If Responsive, use, if not responsive, comment out
+//*----------- START HERE -----------*//
+// #content_bg {
+// 	width: 960px; // This line is different in the site's main stylesheet
+// }
+// #footer-sher {
+// 	background: #0060ac repeat-x;
+// 	color: #fff;
+// 	width: 100%;
+// 	min-width: 100px;
+// 	text-align: center;
+// }
+//*----------- END HERE -----------*//

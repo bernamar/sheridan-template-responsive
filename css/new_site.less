@@ -1,11 +1,8 @@
+@import 'grid.less';
+
 // Mixins
-.cf() {
-	&:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-}
+.cf(){&:after{content:"";display:block;clear: both;}} // clearfix without IE hack
+
 .adelle(@w: 400) {
 	font-family: adelle, georgia, sans-serif;
 	font-weight: @w;
@@ -15,7 +12,7 @@
 	font-weight: @w;
 }
 
-// Responsiveness: New header and tweaking existing elements
+// Clutterless Header
 #header {
 	background: url(../img/responsive/header.png) repeat-x #0060ac;
 	height: 108px;
@@ -28,22 +25,35 @@
 // RESPONSIVE DESIGN
 // If Responsive, use, if not responsive, comment out
 //*----------- START HERE -----------*//
-// #content_bg {
-// 	width: 100%;
-// 	max-width: 960px;
-// }
-// #footer-sher {
-// 	background: #0060ac repeat-x;
-// 	color: #fff;
-// 	width: 100%;
-// 	min-width: 100px;
-// 	text-align: center;
-// }
+#content_bg {
+	width: 100%;
+	max-width: 960px; // This line is different in the site's IE stylesheet
+}
+#footer-sher {
+	background: #0060ac repeat-x;
+	color: #fff;
+	width: 100%;
+	min-width: 100px;
+	text-align: center;
+}
 //*----------- END HERE -----------*//
 
-// Layout
+/******************
+  Mobile-first
+******************/
 *{box-sizing: border-box; -moz-box-sizing: border-box;}
 
-&.error {
-	color: #f99500 !important;
+&.error {color: #f99500 !important;} // Form Validation error colour override
+
+#new_site {
+	// Nest new site CSS here
+}
+
+/******************
+  960px+ layout
+******************/
+@media screen and (min-width: 720px) {
+	#new_site {
+		// Full screen styles here
+	}
 }

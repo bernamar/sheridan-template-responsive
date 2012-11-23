@@ -8,7 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="http://www.sheridancollege.ca/common/css/homepage.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="http://www.sheridancollege.ca/common/css/toc.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="http://www.sheridancollege.ca/common/css/main.css" media="all" />
-	<!-- Custom Head Stuff -->
+	<?php // DEV HEAD STARTS ?>
+	<?php // Responsive? Add line 13. Not responsive? Comment out. ?>
+	<meta name="viewport" content="width=device-width" />
 	<title>NEW SITE</title>
 	<link rel="stylesheet" type="text/css" href="css/NEW_SITE.css" media="all" />
 	<script type="text/javascript" src="js/NEW_SITE.js"></script>
@@ -17,57 +19,30 @@
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="/css/NEW_SITE-ie.css" media="all" />
 	<![endif]-->
+	<?php // DEV HEAD STARTS ?>
 </head>
 <body id="site">
 	<!-- Lots of other stuff in this area, then the Responsive header -->
 	<div id="header">
 		<img src="img/responsive/logo.png" alt="Sheridan logo">
 	</div>
-	
 	<div id="content_bg">
 		<div id="content" class="clearfix">
-			
-			<?php 
-				/*----------- Instructions -----------
-
-					This section automagically handles new pages
-
-					It was created to avoid the redundancy of creating new files
-
-					Create a new php document, e.g.:
-
-						new_page.php
-
-					Link to this page, e.g.:
-					
-						<a href="/?p=new_page">...</a>
-
-					As long as new pages' filenames are the same as the p value, everything will work automagically
-					
-				----------- /Instructions -----------*/
-
-				$page = $_GET['p'];
-				
+			<?php $page = $_GET['p'];
 				if(!$page) {
 					// Site Main Page
 					include 'site.php';
 				} else {
-					
+					// Additional pages
 					include $page . '.php';
-
-				}
-			?>
-
+				} ?>
 		</div>
 	</div>
-	
-
 	 <div id="footer-sher">		
 	 	footer
 	 	<br/><br/>
 	 	if this text is black = Responsive Design OFF (NOT Responsive)
 	 	<br/><br/>
 	 	if this text is white = Responsive Design ON (Responsive)
-
 	</div>
 </body>

@@ -1,3 +1,15 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
 #header {
   background: url(../img/responsive/header.png) repeat-x #0060ac;
   height: 108px;
@@ -7,10 +19,30 @@
   margin: 0 auto;
   padding-top: 1em;
 }
+#content_bg {
+  width: 100%;
+  max-width: 960px;
+}
+#footer-sher {
+  background: #0060ac repeat-x;
+  color: #fff;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+}
+/******************
+  Mobile-first
+******************/
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 .error {
   color: #f99500 !important;
+}
+/******************
+  960px+ layout
+******************/
+@media screen and (min-width: 720px) {
+  
 }
