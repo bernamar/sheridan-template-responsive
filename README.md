@@ -5,14 +5,32 @@ These files were designed to aid in the development of new pages for the Sherida
 
 ## HTML/PHP
 
-Files are designed to work off of a single index.php files where additional pages are created and then included with a PHP include automagically.
+Files are designed to work off of a single index.php files where additional pages are created and then included with a PHP include automagically. It was created to avoid the redundancy of creating new files with a large header and footer. This makes the development process faster and easier.
 
 
 ### Structure
 
 #### index.php
 
-This file contains the header, footer, content elements and all HTTP requests to main stylesheets currently live on [SheridanCollege.ca](http://sheridancollege.ca) as if in a real production environment.
+This file contains the header, footer, content elements and all HTTP requests to main stylesheets currently live on [SheridanCollege.ca](http://sheridancollege.ca) as if in a real production environment. The dynamic, automagic part is the following:
+
+```php
+<?php $page = $_GET['p'];
+if(!$page) {
+	// Site Main Page
+	include 'site.php';
+} else {
+	// Additional pages
+	include $page . '.php';
+} ?>
+```
+
+1. Create a new file. e.g. `second_page.php`
+2. In the navigation, link to this page like so: `<a href="/?p=second_page">Second Page</a>`
+
+This will tell the `index.php` file to include the page with the value of `p` so it is important that they are identical.
+
+If no value for `p` is specified, it defaults to `site.php` which is the first page of your site. Feel free to rename this file but if you do, you must replace the reference to it in the `index.php` with the new filename (line 33).
 
 
 #### site.php
@@ -45,7 +63,7 @@ New Sheridan webpages are built for the future. We anticipate a Responsive Desig
 
 Please reference lines 31-41 in `new_site.less`
 
-```less
+```css
 // RESPONSIVE DESIGN
 // If Responsive, use, if not Responsive, comment out
 //*----------- START HERE -----------*//
