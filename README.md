@@ -2,7 +2,7 @@
 
 These files were designed to aid in the development of new pages for the Sheridan College website
 
-![Screenshot of the Sheridan Responsive Design Template](http://cfprod.sheridaninstitute.ca/tina/assets/etc/screenshot.png)
+![Screenshot of the Sheridan Responsive Design Template](https://raw.github.com/tinacious/sheridan-template-responsive/master/img/responsive/screenshot.png)
 
 ## HTML/PHP
 
