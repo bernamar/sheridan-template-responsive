@@ -21,11 +21,11 @@ This is your main site file. You can change this filename to reflect the project
 
 `site.php` contains:
 
-	```html
-	<div id="new_site">
-		Start here
-	</div>
-	```
+```html
+<div id="new_site">
+	Start here
+</div>
+```
 
 Nest all elements in the new_site element. Please rename this element in both HTML and CSS files.
 
@@ -45,23 +45,23 @@ New Sheridan webpages are built for the future. We anticipate a Responsive Desig
 
 Please reference lines 31-41 in `new_site.less`
 
-	```less
-	// RESPONSIVE DESIGN
-	// If Responsive, use, if not Responsive, comment out
-	//*----------- START HERE -----------*//
-	#content_bg {
-		width: 100%;
-		max-width: 960px;
-	}
-	#footer-sher {
-		background: #0060ac repeat-x;
-		color: #fff;
-		width: 100%;
-		min-width: 100px;
-		text-align: center;
-	}
-	//*----------- END HERE -----------*//
-	```
+```less
+// RESPONSIVE DESIGN
+// If Responsive, use, if not Responsive, comment out
+//*----------- START HERE -----------*//
+#content_bg {
+	width: 100%;
+	max-width: 960px;
+}
+#footer-sher {
+	background: #0060ac repeat-x;
+	color: #fff;
+	width: 100%;
+	min-width: 100px;
+	text-align: center;
+}
+//*----------- END HERE -----------*//
+```
 
 This will give designers and front-end developers the flexibility to design for the future while still designing for the present.
 
@@ -70,8 +70,8 @@ This will give designers and front-end developers the flexibility to design for 
 
 Javascript file is empty except for document ready:
 
-	``` js
-	$(document).ready(function(){
-		// New site scripts here
-	});
-	```
+``` js
+$(document).ready(function(){
+	// New site scripts here
+});
+```
