@@ -69,6 +69,13 @@ The Semantic.gs framework is found in `grid.less` and is imported in the new sit
 
 New Sheridan webpages are built for the future. We anticipate a Responsive Design within the near future and are designing all new pages for Responsive Design.
 
+To know if you are in Responsive Design mode, you can:
+
+1. Resize the browser
+2. Look at the footer text
+	a. If it's white, it's responsive
+	b. If it's black, it's not responsive
+
 
 ##### Usage
 
